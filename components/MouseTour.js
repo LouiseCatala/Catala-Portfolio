@@ -14,6 +14,7 @@ const steps = [
   { selector: ".theme", text: "Switch between light and dark mode." },
   { selector: ".hire", text: "Let’s work together. Reach me here!" },
   { selector: ".hero-intro h1", text: "That’s the end of the tour. Enjoy your stay!" },
+  { exit: true, text: "" },
 ]
 
 export default function MouseTour() {
@@ -65,6 +66,7 @@ export default function MouseTour() {
       if (document.hidden) { frame = requestAnimationFrame(animate); return }
       if (index >= steps.length) { setRunning(false); return }
       const current = steps[index]
+      const isExit = Boolean(current.exit)
       const target = current.selector ? document.querySelector(current.selector) : null
       const rect = target?.getBoundingClientRect()
       // Follow the visitor’s viewport without scrolling it or clicking for them.
@@ -74,11 +76,15 @@ export default function MouseTour() {
         return
       }
       elapsed += dt
-      const goal = rect
+      const goal = isExit
+        ? { x: window.innerWidth + 80, y: from.y }
+        : rect
         ? { x: rect.left + rect.width * .75, y: rect.bottom + 10 }
         : { x: window.innerWidth * .52, y: window.innerHeight * .4 }
-      goal.x = Math.max(24, Math.min(goal.x, window.innerWidth - 28))
-      goal.y = Math.max(24, Math.min(goal.y, window.innerHeight - 90))
+      if (!isExit) {
+        goal.x = Math.max(24, Math.min(goal.x, window.innerWidth - 28))
+        goal.y = Math.max(24, Math.min(goal.y, window.innerHeight - 90))
+      }
       const progress = Math.min(elapsed / 850, 1)
       const ease = progress * progress * (3 - 2 * progress)
       shown = {
@@ -91,6 +97,7 @@ export default function MouseTour() {
         const width = bubble.current?.offsetWidth || 190
         cursor.current.classList.toggle("tour-left", shown.x + width + 34 > window.innerWidth)
         cursor.current.classList.toggle("tour-above", shown.y + height + 30 > window.innerHeight - 70)
+        cursor.current.classList.toggle("tour-exiting", isExit)
       }
       const count = Math.min(current.text.length, Math.max(0, Math.floor((elapsed - 850) / 26)))
       if (count !== typed) {
@@ -98,7 +105,8 @@ export default function MouseTour() {
         if (text.current) text.current.textContent = current.text.slice(0, count)
       }
       if (count === current.text.length && !announced) { announced = true; setAnnouncement(current.text) }
-      if (elapsed >= 850 + current.text.length * 26 + 3000) advance()
+      if (isExit && elapsed >= 850) { setRunning(false); return }
+      if (!isExit && elapsed >= 850 + current.text.length * 26 + 3000) advance()
       frame = requestAnimationFrame(animate)
     }
     frame = requestAnimationFrame(animate)
@@ -115,7 +123,6 @@ export default function MouseTour() {
       <svg className="tour-arrow" viewBox="0 0 28 34"><path d="M3 2 24 20 15 21 11 30Z" /></svg>
       <div className="tour-bubble" ref={bubble}><span className="tour-name">Louise <span>your guide</span></span><p ref={text} /></div>
     </div>}
-    {running && <button type="button" className="tour-exit" onClick={() => setRunning(false)}>Exit tour <kbd>Esc</kbd></button>}
     {!running && <div className="tour-controls" role="group" aria-label="Portfolio tour">
       <button type="button" onClick={start}><span aria-hidden="true">↻</span> take the tour again</button>
     </div>}
