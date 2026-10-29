@@ -8,7 +8,7 @@ export const metadata = {
   description: "Get in touch with Orland Louise Catala."
 }
 
-const homeLinks = [["Work", "/#work"], ["Skills", "/#what-i-can-do"], ["About", "/#about"], ["Experience", "/#experience"], ["Education", "/#education"]]
+const homeLinks = [["Work", "/#work"], ["Skills", "/#what-i-can-do"], ["About", "/#about"], ["Experience", "/#experience"], ["Certifications", "/#certifications"], ["Education", "/#education"]]
 
 export default function ContactPage() {
   return <><Curves /><Nav items={homeLinks} brandHref="/" contactHref="/contact" /><main className={styles.page}><Contact /></main><Reveal /></>

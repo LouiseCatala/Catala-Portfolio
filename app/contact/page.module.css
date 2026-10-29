@@ -13,6 +13,7 @@
 .page :global(.c-card .cn){top:13px;right:18px;font-size:9px}
 .page :global(.c-card .arrow){right:18px;bottom:13px;font-size:17px}
 .page :global(.c-cards>.btn){margin-top:12px;min-height:50px}
+@media(min-width:901px){.page :global(.contact){transform:scale(.93);transform-origin:center}}
 @media(hover:hover){.page :global(.c-card:hover){transform:translateX(4px);box-shadow:none}}
 @media(max-width:900px){.page{height:auto;overflow:visible}.page :global(.contact){height:auto;min-height:0;padding:120px 20px 80px;grid-template-columns:1fr;gap:36px}.page :global(.contact .mega){font-size:clamp(58px,15vw,94px)}.page :global(.c-cards){width:100%}}
 @media(max-width:520px){.page :global(.contact){padding-top:105px}.page :global(.contact .mega){font-size:58px}.page :global(.c-card){padding:15px 16px}.page :global(.c-card b){font-size:13px}.page :global(.c-card .ic){width:34px;height:34px}}

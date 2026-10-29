@@ -28,7 +28,7 @@ main,.nav,.section{position:relative;z-index:1}
 .brand{display:flex;align-items:center;gap:14px}
 .logo{width:42px;height:42px;border-radius:10px;background:#111;color:#fff;display:grid;place-items:center;font-family:var(--vibes),cursive;font-size:28px;line-height:1}
 .brand-name{letter-spacing:5px;font-weight:600;font-size:14px}
-.links{display:flex;gap:32px}
+.links{display:flex;gap:38px}
 .links a{font-size:13px;text-transform:uppercase;letter-spacing:2px;position:relative;padding:4px 0}
 .links a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s}
 .links a:hover::after{transform:scaleX(1)}

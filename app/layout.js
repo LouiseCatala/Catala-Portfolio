@@ -3,6 +3,7 @@ import "./globals.css"
 import "./about.css"
 import "./education.css"
 import "./experience.css"
+import "./certifications.css"
 const inter = Inter({ subsets:["latin"], variable:"--inter" })
 const mono = JetBrains_Mono({ subsets:["latin"], variable:"--mono" })
 const vibes = Great_Vibes({ subsets:["latin"], weight:"400", variable:"--vibes" })
