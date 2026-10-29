@@ -115,6 +115,7 @@ export default function MouseTour() {
       <svg className="tour-arrow" viewBox="0 0 28 34"><path d="M3 2 24 20 15 21 11 30Z" /></svg>
       <div className="tour-bubble" ref={bubble}><span className="tour-name">Louise <span>your guide</span></span><p ref={text} /></div>
     </div>}
+    {running && <button type="button" className="tour-exit" onClick={() => setRunning(false)}>Exit tour <kbd>Esc</kbd></button>}
     {!running && <div className="tour-controls" role="group" aria-label="Portfolio tour">
       <button type="button" onClick={start}><span aria-hidden="true">↻</span> take the tour again</button>
     </div>}
