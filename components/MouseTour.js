@@ -13,7 +13,7 @@ const steps = [
   { selector: '.links a[href="#education"]', text: "Here’s my educational background." },
   { selector: ".theme", text: "Switch between light and dark mode." },
   { selector: ".hire", text: "Let’s work together. Reach me here!" },
-  { selector: ".hero-intro h1", text: "That’s the end of the tour. Enjoy your stay!" },
+  { selector: ".hero-intro h1", text: "That’s the end of the tour. Enjoy your stay!✌️" },
   { exit: true, text: "" },
 ]
 
