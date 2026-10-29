@@ -35,7 +35,7 @@ export function Experience() {
 export function Contact() {
   return (
     <section id="contact" className="section two contact">
-      <div><p className="eyebrow reveal">GET IN TOUCH</p><h2 className="mega reveal">LET’S<br />WORK<br />TOGETHER</h2><p className="lead">Looking for the next problem worth solving.</p><p className="muted">I'm seeking an entry-level or internship opportunity in web development, embedded systems, or hands-on technical work.</p><a className="btn dark pill" href={resume}>DOWNLOAD RESUME →</a></div>
+      <div><p className="eyebrow reveal">GET IN TOUCH</p><h2 className="mega reveal">LET’S<br />WORK<br />TOGETHER</h2><p className="lead">Looking for the next problem worth solving.</p><p className="muted">Available for web development, embedded systems, and hands-on technical work.</p><a className="btn dark pill" href={resume}>DOWNLOAD RESUME →</a></div>
       <div className="c-cards">{contactDirectory.map(([n,l,h])=>(<a key={l} className="c-card reveal" href={h} target={h.startsWith("http")?"_blank":undefined} rel="noopener noreferrer"><span className="ic"><ContactIcon name={l} /></span><span><b>{l}</b></span><span className="cn mono">{n}</span><span className="arrow">↗</span></a>))}
         <a className="btn outline pill wide" href="mailto:louise.catala24@gmail.com">SEND ME AN EMAIL →</a></div>
     </section>
