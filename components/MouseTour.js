@@ -9,7 +9,7 @@ const steps = [
   { selector: '.links a[href="#what-i-can-do"]', text: "Explore my technical skills." },
   { selector: '.links a[href="#about"]', text: "Get to know me a little better." },
   { selector: '.links a[href="#experience"]', text: "See my work experience here." },
-  { selector: '.links a[href="#certifications"]', text: "View my verified certifications here." },
+  { selector: '.links a[href="#certifications"]', text: "See my certificates here." },
   { selector: '.links a[href="#education"]', text: "Here’s my educational background." },
   { selector: ".theme", text: "Switch between light and dark mode." },
   { selector: ".hire", text: "Let’s work together. Reach me here!" },
