@@ -20,7 +20,7 @@ export default function Nav({ items = nav, brandHref = "#top", contactHref = "/c
   return (
     <header className={`nav ${scrolled ? "scrolled" : ""} ${open ? "open" : ""} ${compact ? "nav-compact" : ""}`}>
       <div className="nav-row">
-        <a href={brandHref} className="brand"><span className="logo">O</span><span className="brand-name">ORLAND</span></a>
+        <a href={brandHref} className="brand"><span className="logo">O</span><span className="brand-name">LOUISE</span></a>
         <nav className="links" aria-label="Primary">{items.map(([l,h]) => <a key={h} href={h}>{l}</a>)}</nav>
         <div className="nav-right">
           <button className={`theme ${dark ? "is-dark" : ""}`} onClick={toggle} aria-label="Toggle theme"><span className="sun">☀</span><span className="moon">☾</span></button>
