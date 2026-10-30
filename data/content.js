@@ -23,17 +23,21 @@ export const projects = [
     "kind": "Capstone Project",
     "desc": "A platform connecting rice farmers in Magalang, Pampanga with transportation, mechanical drying, storage, and rice milling services. Integrates ESP32 grain moisture assessment, harvest listings, ranked buyer bids, production loan requests, and service tracking, with a Debian community access kiosk.",
     "stack": [
-      "React",
+      "React 19",
       "TypeScript",
+      "Vite",
+      "Tailwind CSS 4",
       "PHP",
-      "MariaDB",
-      "API's",
+      "PDO",
+      "MySQL / MariaDB",
+      "REST API",
       "ESP32",
-      "Debian 13"
+      "PalaySense",
+      "Intel NUC"
     ],
     "img": "/images/projects/kawing.jpg",
-    "href": "https://github.com/louisecatala24-hash/KAWING--IoT-Integrated-Post-Harvest-Coordination-Platform",
-    "liveUrl": "https://github.com/louisecatala24-hash/KAWING--IoT-Integrated-Post-Harvest-Coordination-Platform",
+    "href": "https://github.com/LouiseCatala/KAWING--IoT-Integrated-Post-Harvest-Coordination-Platform",
+    "liveUrl": "https://github.com/LouiseCatala/KAWING--IoT-Integrated-Post-Harvest-Coordination-Platform",
     "category": "web-iot"
   },
   {
@@ -66,11 +70,12 @@ export const projects = [
     "kind": "Personal Project",
     "desc": "Ratheuse is a real-time PC hardware utilization monitor with a dedicated website where users can download the desktop application. The app helps users observe CPU load, clock speeds and temperatures, GPU utilization and VRAM usage, and RAM allocation and bandwidth from one interface.",
     "stack": [
-      "PC Monitoring",
-      "CPU Metrics",
-      "GPU & VRAM",
-      "RAM Metrics",
-      "Desktop App"
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS 4",
+      "Gemini API",
+      "Netlify"
     ],
     "img": "/images/projects/ratheuse.png",
     "href": "https://ratheuse.netlify.app/",
@@ -86,16 +91,20 @@ export const projects = [
     "kind": "Academic Project",
     "desc": "A touch-enabled self-service kiosk for social welfare transactions for solo parents, persons with disabilities, and senior citizens. Supports ID registration, renewal and replacement, digital application forms, and document submissions, with real-time Firebase persistence and transaction verification.",
     "stack": [
-      "React",
+      "React 19",
       "TypeScript",
-      "Tailwind CSS",
-      "Firebase",
-      "Intel NUC",
+      "Vite",
+      "Tailwind CSS 4",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Firebase Realtime Database",
+      "Motion",
+      "Lucide React",
       "Capacitive Touchscreen"
     ],
     "img": "/images/projects/e-lingap.jpg",
-    "href": "https://github.com/louisecatala24-hash/e-LINGAP",
-    "liveUrl": "https://github.com/louisecatala24-hash/e-LINGAP",
+    "href": "https://github.com/LouiseCatala/e-LINGAP",
+    "liveUrl": "https://github.com/LouiseCatala/e-LINGAP",
     "category": "web-iot"
   },
   {
@@ -196,6 +205,26 @@ export const projects = [
     "category": "kicad"
   },
   {
+    "title": "Fastest Finger Game – KiCad PCB",
+    "slug": "fastest-finger-game",
+    "name": "Fastest Finger Game",
+    "subtitle": "Three-Player Reaction-Time PCB",
+    "summary": "A three-player reaction-time game board designed in KiCad.",
+    "kind": "Circuitry Project",
+    "desc": "An editable KiCad PCB layout for a three-player fastest-finger game, featuring player buttons, a start and reset control, a four-digit display, LEDs, buzzer, and Tang Nano 9K FPGA board footprint.",
+    "stack": [
+      "KiCad",
+      "PCB Design",
+      "Schematic Design",
+      "Tang Nano 9K",
+      "7-Segment Display"
+    ],
+    "img": "/images/projects/fastest-finger-game.jpg",
+    "href": "https://github.com/LouiseCatala/Fastest-Finger-Game/tree/main",
+    "liveUrl": "https://github.com/LouiseCatala/Fastest-Finger-Game/tree/main",
+    "category": "kicad"
+  },
+  {
     "title": "Floor Plan 2D – AutoCAD Design",
     "slug": "floor-plan-2d",
     "name": "Floor Plan 2D",
@@ -216,6 +245,25 @@ export const projects = [
     ],
     "href": "https://github.com/LouiseCatala/Floor-Plan-2d/tree/main",
     "liveUrl": "https://github.com/LouiseCatala/Floor-Plan-2d/tree/main",
+    "category": "autocad"
+  },
+  {
+    "title": "Appliances - 3D AutoCAD Models",
+    "slug": "appliances-3d-dwg",
+    "name": "Appliances",
+    "subtitle": "Multiple 3D AutoCAD Projects",
+    "summary": "A collection of 3D AutoCAD appliance and furniture projects.",
+    "kind": "AutoCAD Project",
+    "desc": "A collection of 3D AutoCAD projects: Bed, Desk of Books, Lamp, Storage Desk, and Table.",
+    "stack": [
+      "AutoCAD",
+      "3D Modeling",
+      "Furniture Design",
+      "DWG"
+    ],
+    "img": "/images/projects/storage-desk.jpg",
+    "href": "https://github.com/LouiseCatala/Appliances-3d-dwg-",
+    "liveUrl": "https://github.com/LouiseCatala/Appliances-3d-dwg-",
     "category": "autocad"
   }
 ]

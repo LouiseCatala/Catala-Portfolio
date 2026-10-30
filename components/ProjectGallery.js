@@ -44,6 +44,7 @@ export default function ProjectGallery({ items }) {
     {selected && <dialog className="project-dialog" ref={dialog} aria-labelledby={`details-${selected.slug}`} onCancel={() => setSelected(null)} onClose={() => setSelected(null)} onClick={event => { if (event.target === event.currentTarget) setSelected(null) }}>
       <div className="project-dialog-content">
         <div className="project-dialog-top"><p className="eyebrow muted">{selected.kind}</p><button type="button" className="project-dialog-close" aria-label="Close project details" onClick={() => setSelected(null)}>✕</button></div>
+        <img className="project-dialog-image" src={selected.img} alt={`${selected.title} preview`} />
         <h2 id={`details-${selected.slug}`}>{selected.title}</h2>
         <p className="muted">{selected.desc}</p>
         <h3 className="eyebrow">Technologies</h3>
