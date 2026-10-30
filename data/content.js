@@ -194,6 +194,29 @@ export const projects = [
     "href": "https://github.com/louisecatala24-hash/4to1mux",
     "liveUrl": "https://github.com/louisecatala24-hash/4to1mux",
     "category": "kicad"
+  },
+  {
+    "title": "Floor Plan 2D – AutoCAD Design",
+    "slug": "floor-plan-2d",
+    "name": "Floor Plan 2D",
+    "subtitle": "2D Architectural Floor Plan",
+    "summary": "A 2D floor plan created in AutoCAD.",
+    "kind": "AutoCAD Project",
+    "desc": "A 2D architectural floor plan developed in AutoCAD, presenting a clear spatial layout and technical drawing details.",
+    "stack": [
+      "AutoCAD",
+      "2D Drafting",
+      "Floor Planning",
+      "Technical Drawing"
+    ],
+    "img": "/images/projects/floorplan2.jpg",
+    "images": [
+      "/images/projects/floorplan1.jpg",
+      "/images/projects/floorplan2.jpg"
+    ],
+    "href": "https://github.com/LouiseCatala/Floor-Plan-2d/tree/main",
+    "liveUrl": "https://github.com/LouiseCatala/Floor-Plan-2d/tree/main",
+    "category": "autocad"
   }
 ]
 export const tech = ["AutoCAD", "Python", "HTML/CSS", "JavaScript", "TypeScript", "PHP", "React", "Node.js", "MySQL", "Firebase", "API's", "ESP32", "Arduino", "Circuit Design", "KiCad", "Proteus", "Soldering"]

@@ -180,7 +180,8 @@ main,.nav,.section{position:relative;z-index:1}
 .project-dialog-content>.ulink{justify-self:start}
 .project-detail-page{max-width:1000px}
 .project-detail-header{margin:40px 0 28px}
-.project-detail-image{width:100%;max-height:520px;object-fit:contain;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.project-detail-gallery{display:grid;gap:16px}.project-detail-gallery.has-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.project-detail-image{width:100%;max-height:520px;object-fit:contain;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+@media(max-width:700px){.project-detail-gallery.has-gallery{grid-template-columns:1fr}}
 .project-detail-section{margin:36px 0;display:grid;gap:16px}
 .project-detail-section h2{font-size:24px}
 .project-empty{padding:32px;margin-top:20px;border:1px solid var(--border);border-radius:22px;background:var(--surface)}
