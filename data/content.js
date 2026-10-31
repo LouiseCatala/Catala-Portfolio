@@ -15,30 +15,6 @@ export const projectCategories = [
 ]
 export const projects = [
   {
-    "title": "The SIS – Proxmox Resource Monitoring Console",
-    "slug": "the-sis-proxmox-monitoring",
-    "name": "The SIS",
-    "subtitle": "Proxmox Resource Monitoring Console",
-    "summary": "A local dashboard for monitoring Proxmox resources, system health, alerts, and activity history.",
-    "kind": "Academic Project",
-    "desc": "The SIS is a local web monitoring console for a Proxmox lab environment. It collects CPU, RAM, disk, and availability readings from configured nodes, records activity history in PostgreSQL, and presents trends, threshold alerts, notifications, and downloadable reports in one dashboard.",
-    "stack": [
-      "Python",
-      "Flask",
-      "Waitress",
-      "PostgreSQL",
-      "psycopg",
-      "Proxmox API",
-      "REST API",
-      "HTML/CSS",
-      "JavaScript"
-    ],
-    "img": "/images/projects/the-sis-proxmox-monitor.png",
-    "href": "https://github.com/LouiseCatala/PROXMOX---monitoring",
-    "liveUrl": "https://github.com/LouiseCatala/PROXMOX---monitoring",
-    "category": "web-iot"
-  },
-  {
     "title": "KAWING – IoT-Integrated Post-Harvest Coordination Platform",
     "slug": "kawing",
     "name": "KAWING",
@@ -333,6 +309,20 @@ export const projects = [
     "href": "https://github.com/LouiseCatala/Appliances-3d-dwg-",
     "liveUrl": "https://github.com/LouiseCatala/Appliances-3d-dwg-",
     "category": "autocad"
+  },
+  {
+    "title": "The SIS – Proxmox Resource Monitoring Console",
+    "slug": "the-sis-proxmox-monitoring",
+    "name": "The SIS",
+    "subtitle": "Proxmox Resource Monitoring Console",
+    "summary": "A local dashboard for monitoring Proxmox resources, system health, alerts, and activity history.",
+    "kind": "Academic Project",
+    "desc": "The SIS is a local web monitoring console for a Proxmox lab environment. It collects CPU, RAM, disk, and availability readings from configured nodes, records activity history in PostgreSQL, and presents trends, threshold alerts, notifications, and downloadable reports in one dashboard.",
+    "stack": ["Python", "Flask", "Waitress", "PostgreSQL", "psycopg", "Proxmox API", "REST API", "HTML/CSS", "JavaScript"],
+    "img": "/images/projects/the-sis-proxmox-monitor.png",
+    "href": "https://github.com/LouiseCatala/PROXMOX---monitoring",
+    "liveUrl": "https://github.com/LouiseCatala/PROXMOX---monitoring",
+    "category": "web-iot"
   }
 ]
 export const tech = ["AutoCAD", "Python", "HTML/CSS", "JavaScript", "TypeScript", "PHP", "React", "Node.js", "MySQL", "Firebase", "API's", "ESP32", "Arduino", "Circuit Design", "KiCad", "Proteus", "Soldering"]
