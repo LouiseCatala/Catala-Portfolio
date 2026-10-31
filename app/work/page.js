@@ -7,8 +7,13 @@ export default function WorkPage() {
   const circuitProjects = projects.filter(project => project.category === "kicad")
   const sineWaveIndex = circuitProjects.findIndex(project => project.slug === "sine-wave")
   const fastestFingerIndex = circuitProjects.findIndex(project => project.slug === "fastest-finger-game")
+  const twoToOneMultiplexerIndex = circuitProjects.findIndex(project => project.slug === "2-to-1-multiplexer")
+  const palaySenseIndex = circuitProjects.findIndex(project => project.slug === "kawing-palaysense")
   if (sineWaveIndex !== -1 && fastestFingerIndex !== -1) {
     [circuitProjects[sineWaveIndex], circuitProjects[fastestFingerIndex]] = [circuitProjects[fastestFingerIndex], circuitProjects[sineWaveIndex]]
+  }
+  if (twoToOneMultiplexerIndex !== -1 && palaySenseIndex !== -1) {
+    [circuitProjects[twoToOneMultiplexerIndex], circuitProjects[palaySenseIndex]] = [circuitProjects[palaySenseIndex], circuitProjects[twoToOneMultiplexerIndex]]
   }
 
   return (
