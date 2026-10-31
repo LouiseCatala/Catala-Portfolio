@@ -22,7 +22,7 @@ export default function WorkPage() {
     <main className="section work-page">
       <Link href="/" className="eyebrow stack-view-all">← Back to Portfolio</Link>
       <section className="project-section" aria-labelledby="web-developments">
-        <h1 id="web-developments" className="h2">Web Developments</h1>
+        <h1 id="web-developments" className="h2">Software &amp; Systems Development</h1>
         <p className="muted">Explore my websites and applications, from frontend interfaces to backend services, databases, and IoT integrations.</p>
         <ProjectGallery items={projects.filter(project => project.category === "web-iot")} />
       </section>
