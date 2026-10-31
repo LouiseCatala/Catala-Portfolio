@@ -225,6 +225,30 @@ export const projects = [
     "category": "kicad"
   },
   {
+    "title": "KAWING PalaySense - IoT Grain Moisture Device",
+    "slug": "kawing-palaysense",
+    "name": "KAWING PalaySense",
+    "subtitle": "IoT Grain Moisture Assessment",
+    "summary": "An ESP32-based device that assesses rice grain moisture and sends readings to the KAWING platform.",
+    "kind": "Circuitry Project",
+    "desc": "The IoT hardware component of KAWING, using an ESP32 and HW-390 capacitive moisture sensor to estimate grain moisture, classify readings, and transmit results to the web platform through Wi-Fi and a REST API.",
+    "stack": [
+      "ESP32 DevKit V1",
+      "Arduino IDE",
+      "C++",
+      "KiCad",
+      "HW-390 Moisture Sensor",
+      "Wi-Fi",
+      "REST API",
+      "TP4056",
+      "MT3608"
+    ],
+    "img": "/images/projects/palaysense.jpg",
+    "href": "https://github.com/LouiseCatala/Kawing-PalaySense/tree/main",
+    "liveUrl": "https://github.com/LouiseCatala/Kawing-PalaySense/tree/main",
+    "category": "kicad"
+  },
+  {
     "title": "Floor Plan 2D – AutoCAD Design",
     "slug": "floor-plan-2d",
     "name": "Floor Plan 2D",
