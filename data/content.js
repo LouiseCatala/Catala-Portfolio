@@ -248,6 +248,26 @@ export const projects = [
     "category": "autocad"
   },
   {
+    "title": "3D Floor Plan - AutoCAD House Models",
+    "slug": "3d-floor-plan",
+    "name": "3D Floor Plan",
+    "subtitle": "Two-Story House Models",
+    "summary": "A pair of detailed two-story house models and floor plans drafted in AutoCAD.",
+    "kind": "AutoCAD Project",
+    "desc": "A collection of two 3D AutoCAD house models: a realistic two-story design and a wooden shaded floor-plan model with a hip roof, covered entry, carport, driveway, walkway, and planters.",
+    "stack": [
+      "AutoCAD 2023",
+      "3D Modeling",
+      "Architectural Design",
+      "Floor Planning",
+      "DWG"
+    ],
+    "img": "/images/projects/3d-floor-plan.jpg",
+    "href": "https://github.com/LouiseCatala/3D-Floor-Plan/tree/main",
+    "liveUrl": "https://github.com/LouiseCatala/3D-Floor-Plan/tree/main",
+    "category": "autocad"
+  },
+  {
     "title": "Appliances - 3D AutoCAD Models",
     "slug": "appliances-3d-dwg",
     "name": "Appliances",
