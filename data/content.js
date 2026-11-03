@@ -320,7 +320,7 @@ export const projects = [
     "desc": "CareWare is a Windows desktop application that brings PC diagnostics, guarded temporary-file cleanup, physical inspection notes, and customer-ready reports into one clear workflow. It keeps checkup history locally and explains technical results in plain language while requiring review and consent before cleanup actions.",
     "stack": ["Python", "pywebview", "React", "TypeScript", "Tailwind CSS", "Vite", "SQLite", "ReportLab", "psutil"],
     "img": "/images/projects/careware.png",
-    "href": "https://github.com/LouiseCatala/CareWare",
+    "href": "https://louisecatala.github.io/CareWare/",
     "liveUrl": "https://louisecatala.github.io/CareWare/",
     "category": "web-iot"
   },
