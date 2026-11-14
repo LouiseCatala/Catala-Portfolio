@@ -1,13 +1,33 @@
-const rows = [10,20,30,40,60,70,80,90]
-const Row = ({ style, cls="" }) => (<div className={`marquee ${cls}`} style={style} aria-hidden="true"><div className="track">{Array.from({length:8}).map((_,i)=><span key={i}>ORLAND LOUISE CATALA</span>)}</div></div>)
+import Image from "next/image"
+
+const nameCopies = Array.from({ length: 8 }, (_, index) => (
+  <span key={index}>ORLAND LOUISE CATALA</span>
+))
+
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <div className="circles" aria-hidden="true"><i /><i /><i /></div>
-      <Row cls="main-row" />
-      {rows.map((r,i)=><Row key={r} cls="extra-row" style={{ top:`${r}%`, animationDirection: i%2 ? "reverse" : "normal" }} />)}
-      <div className="hero-intro"><p className="eyebrow">COMPUTER ENGINEERING STUDENT</p><h1>Orland Louise<br />Catala<span>.</span></h1><p>Web development. Embedded systems.<br />Practical solutions for everyday needs.</p><a className="btn dark pill" href="#work">EXPLORE MY WORK →</a></div>
-      <a href="#work" className="scroll-ind"><span>Scroll Down</span><i /></a>
+      <div className="marquee" aria-hidden="true">
+        <div className="track">{nameCopies}</div>
+      </div>
+      <div className="hero-layout">
+        <div className="hero-copy">
+          <h1>Engineering useful systems, from circuits to code.</h1>
+          <p className="hero-description">Web applications, embedded systems, and tools that solve everyday problems.</p>
+          <a className="btn dark pill" href="#work">Explore My Work <span aria-hidden="true">→</span></a>
+        </div>
+        <figure className="hero-portrait">
+          <Image
+            src="/images/hero-award.png"
+            alt="Orland Louise Catala holding his second runner-up award at Mr. NSTP 2024"
+            width={816}
+            height={1088}
+            priority
+            sizes="(max-width: 700px) 78vw, (max-width: 1200px) 40vw, 460px"
+          />
+          <figcaption>2nd Runner-Up <span>·</span> Mr. NSTP 2024</figcaption>
+        </figure>
+      </div>
     </section>
   )
 }
