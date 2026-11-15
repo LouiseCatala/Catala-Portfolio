@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 
 const SESSION_KEY = "orland-portfolio-tour-seen"
 const steps = [
-  { selector: ".hero-intro h1", text: "Hey, I’m Louise. Welcome to my Website!" },
+  { selector: ".hero-copy h1", text: "Hey, I’m Louise. Welcome to my Website!" },
   { selector: '.links a[href="#work"]', text: "See what I’ve built here." },
   { selector: '.links a[href="#what-i-can-do"]', text: "Explore my technical skills." },
   { selector: '.links a[href="#about"]', text: "Get to know me a little better." },
@@ -13,7 +13,7 @@ const steps = [
   { selector: '.links a[href="#education"]', text: "Here’s my educational background." },
   { selector: ".theme", text: "Switch between light and dark mode." },
   { selector: ".hire", text: "Let’s work together. Reach me here!" },
-  { selector: ".hero-intro h1", text: "That’s the end of the tour. Enjoy your stay!✌️" },
+  { selector: ".hero-copy h1", text: "That’s the end of the tour. Enjoy your stay!✌️" },
   { exit: true, text: "" },
 ]
 
