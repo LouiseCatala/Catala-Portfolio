@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="hero-copy">
           <h1>Engineering useful systems, from circuits to code.</h1>
           <p className="hero-description">Web applications, embedded systems, and tools that solve everyday problems.</p>
-          <a className="btn dark pill" href="#work">Explore My Work <span aria-hidden="true">→</span></a>
+          <a className="btn dark pill" href="#work">Browse My Projects <span aria-hidden="true">→</span></a>
         </div>
         <figure className="hero-portrait">
           <Image
@@ -25,7 +25,7 @@ export default function Hero() {
             priority
             sizes="(max-width: 700px) 78vw, (max-width: 1200px) 40vw, 460px"
           />
-          <figcaption>2nd Runner-Up <span>·</span> Mr. NSTP 2024</figcaption>
+          <figcaption>ORLAND LOUISE CATALA <span>·</span> COMPUTER ENGINEERING STUDENT</figcaption>
         </figure>
       </div>
     </section>
