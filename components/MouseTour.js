@@ -102,7 +102,7 @@ export default function MouseTour() {
       }
       if (count === current.text.length && !announced) { announced = true; setAnnouncement(current.text) }
       if (isExit && elapsed >= travelDuration) { setRunning(false); return }
-      if (!isExit && elapsed >= travelDuration + current.text.length * 26 + 3000) advance()
+      if (!isExit && elapsed >= travelDuration + current.text.length * 26 + 2500) advance()
       frame = requestAnimationFrame(animate)
     }
     frame = requestAnimationFrame(animate)
