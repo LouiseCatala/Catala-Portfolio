@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react"
 
-const SESSION_KEY = "orland-portfolio-tour-seen"
 const steps = [
   { selector: ".hero-copy h1", text: "Hey, I’m Louise. Welcome to my Website!" },
   { selector: '.links a[href="#work"]', text: "See what I’ve built here." },
@@ -28,25 +27,20 @@ export default function MouseTour() {
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)")
-    let timer
     const sync = () => {
       setEligible(media.matches)
-      window.clearTimeout(timer)
       if (!media.matches) { setRunning(false); return }
-      let seen = false
-      try { seen = sessionStorage.getItem(SESSION_KEY) === "1" } catch {}
-      if (!seen) timer = window.setTimeout(() => setRunning(true), 1400)
+      setRunning(true)
     }
     sync()
     media.addEventListener("change", sync)
-    return () => { window.clearTimeout(timer); media.removeEventListener("change", sync) }
+    return () => media.removeEventListener("change", sync)
   }, [])
 
   useEffect(() => {
     if (!running || !eligible) return
-    try { sessionStorage.setItem(SESSION_KEY, "1") } catch {}
     let frame, index = 0, elapsed = 0, previous = 0, typed = -1, announced = false
-    let from = { x: window.innerWidth * .45, y: window.innerHeight * .55 }
+    let from = { x: window.innerWidth + 40, y: window.innerHeight * .4 }
     let shown = { ...from }
     setAnnouncement("")
 
@@ -76,6 +70,7 @@ export default function MouseTour() {
         return
       }
       elapsed += dt
+      const isGreeting = index === 0
       const goal = isExit
         ? { x: window.innerWidth + 80, y: from.y }
         : rect
@@ -85,11 +80,12 @@ export default function MouseTour() {
         goal.x = Math.max(24, Math.min(goal.x, window.innerWidth - 28))
         goal.y = Math.max(24, Math.min(goal.y, window.innerHeight - 90))
       }
-      const progress = Math.min(elapsed / 850, 1)
-      const ease = progress * progress * (3 - 2 * progress)
+      const travelDuration = isGreeting ? 600 : 850
+      const progress = Math.min(elapsed / travelDuration, 1)
+      const ease = 1 - (1 - progress) ** 4
       shown = {
         x: from.x + (goal.x - from.x) * ease,
-        y: from.y + (goal.y - from.y) * ease - Math.sin(Math.PI * progress) * 35,
+        y: from.y + (goal.y - from.y) * ease,
       }
       if (cursor.current) {
         cursor.current.style.transform = `translate3d(${shown.x}px, ${shown.y}px, 0)`
@@ -99,14 +95,14 @@ export default function MouseTour() {
         cursor.current.classList.toggle("tour-above", shown.y + height + 30 > window.innerHeight - 70)
         cursor.current.classList.toggle("tour-exiting", isExit)
       }
-      const count = Math.min(current.text.length, Math.max(0, Math.floor((elapsed - 850) / 26)))
+      const count = Math.min(current.text.length, Math.max(0, Math.floor((elapsed - (isGreeting ? 0 : travelDuration)) / 26)))
       if (count !== typed) {
         typed = count
         if (text.current) text.current.textContent = current.text.slice(0, count)
       }
       if (count === current.text.length && !announced) { announced = true; setAnnouncement(current.text) }
       if (isExit && elapsed >= 850) { setRunning(false); return }
-      if (!isExit && elapsed >= 850 + current.text.length * 26 + 3000) advance()
+      if (!isExit && elapsed >= travelDuration + current.text.length * 26 + 3000) advance()
       frame = requestAnimationFrame(animate)
     }
     frame = requestAnimationFrame(animate)
