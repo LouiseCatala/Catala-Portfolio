@@ -80,12 +80,12 @@ export default function MouseTour() {
         goal.x = Math.max(24, Math.min(goal.x, window.innerWidth - 28))
         goal.y = Math.max(24, Math.min(goal.y, window.innerHeight - 90))
       }
-      const travelDuration = isGreeting ? 600 : 850
+      const travelDuration = isGreeting ? 1050 : 850
       const progress = Math.min(elapsed / travelDuration, 1)
       const ease = 1 - (1 - progress) ** 4
       shown = {
         x: from.x + (goal.x - from.x) * ease,
-        y: from.y + (goal.y - from.y) * ease,
+        y: from.y + (goal.y - from.y) * ease - Math.sin(Math.PI * progress) * 8,
       }
       if (cursor.current) {
         cursor.current.style.transform = `translate3d(${shown.x}px, ${shown.y}px, 0)`
