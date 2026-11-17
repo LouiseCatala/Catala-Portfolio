@@ -36,8 +36,8 @@ export const projects = [
       "Intel NUC"
     ],
     "img": "/images/projects/kawing.jpg",
-    "href": "https://github.com/LouiseCatala/KAWING--IoT-Integrated-Post-Harvest-Coordination-Platform",
-    "liveUrl": "https://github.com/LouiseCatala/KAWING--IoT-Integrated-Post-Harvest-Coordination-Platform",
+    "href": "https://kawingph.com",
+    "liveUrl": "https://kawingph.com",
     "category": "web-iot"
   },
   {
