@@ -80,7 +80,7 @@ export default function MouseTour() {
         goal.x = Math.max(24, Math.min(goal.x, window.innerWidth - 28))
         goal.y = Math.max(24, Math.min(goal.y, window.innerHeight - 90))
       }
-      const travelDuration = isGreeting ? 1050 : 850
+      const travelDuration = isGreeting ? 1600 : 1300
       const progress = Math.min(elapsed / travelDuration, 1)
       const ease = 1 - (1 - progress) ** 4
       shown = {
@@ -101,7 +101,7 @@ export default function MouseTour() {
         if (text.current) text.current.textContent = current.text.slice(0, count)
       }
       if (count === current.text.length && !announced) { announced = true; setAnnouncement(current.text) }
-      if (isExit && elapsed >= 850) { setRunning(false); return }
+      if (isExit && elapsed >= travelDuration) { setRunning(false); return }
       if (!isExit && elapsed >= travelDuration + current.text.length * 26 + 3000) advance()
       frame = requestAnimationFrame(animate)
     }
