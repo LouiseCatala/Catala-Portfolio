@@ -35,7 +35,7 @@ export const projects = [
       "PalaySense",
       "Intel NUC"
     ],
-    "img": "/images/projects/kawing.jpg",
+    "img": "/images/projects/kawing-thumbnail.png",
     "href": "https://kawingph.com",
     "liveUrl": "https://kawingph.com",
     "category": "web-iot"
