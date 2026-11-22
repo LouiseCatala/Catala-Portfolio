@@ -118,7 +118,6 @@ export const projects = [
   "stack": [
     "Acer Chromebook R11",
     "Debian 13",
-    "AutoCAD",
     "MrChromebox UEFI",
     "Linux",
     "Shell Scripting",
@@ -127,7 +126,7 @@ export const projects = [
   "img": "/images/projects/acer-r11-kiosk.png",
   "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation",
   "liveUrl": "https://kawingph.com",
-  "category": "Circuitry Project"
+  "category": "kicad"
   },
   {
     "title": "Smart Home Automation – Rain-Sensing Clothesline and Automatic Door",
