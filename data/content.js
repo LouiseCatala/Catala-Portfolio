@@ -311,6 +311,26 @@ export const projects = [
     "category": "autocad"
   },
   {
+    "title": "SECOND LIFE FOR AN OLD LAPTOP",
+    "slug": "acer-r11-kiosk-transformation",
+    "name": "Second Life for an Old Laptop",
+    "subtitle": "Acer Chromebook R11 Touchscreen Kiosk",
+    "summary": "Repurposing an Acer Chromebook R11 into a touchscreen kiosk for a thesis project, avoiding the cost of buying a new device.",
+    "kind": "AutoCAD Project",
+    "desc": "Acer Chromebook R11 components modeled and documented in AutoCAD as part of its transformation into a functional touchscreen kiosk. The laptop was reused for a thesis project because of limited financial resources, rather than purchasing a new kiosk device.",
+    "stack": [
+      "AutoCAD 2023",
+      "DWG",
+      "Acer Chromebook R11",
+      "3D Modeling",
+      "Hardware Repurposing"
+    ],
+    "img": "/images/projects/acer-r11-dismantled-parts.png",
+    "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation/tree/main/CAD",
+    "liveUrl": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation/tree/main/CAD",
+    "category": "autocad"
+  },
+  {
     "title": "CareWare – PC Cleanup and Health Checker",
     "slug": "careware",
     "name": "CareWare",
