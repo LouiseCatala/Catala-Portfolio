@@ -113,7 +113,7 @@ export const projects = [
     "name": "From Laptop to Kiosk",
     "subtitle": "Acer R11 Touchscreen Transformation",
     "summary": "A project transforming a standard laptop into a touchscreen kiosk for public use.",
-    "kind": "Hardware Project",
+    "kind": "Circuitry Project",
    "desc": "A cost-effective touchscreen kiosk developed for the KAWING thesis project by repurposing an Acer Chromebook R11. The laptop was dismantled, redesigned in AutoCAD, and converted from ChromeOS to Debian 13 using custom UEFI firmware. The kiosk features a customized touchscreen keyboard, secure login and shutdown authentication, and dedicated access to the KAWING platform for Filipino farmers.",
   "stack": [
     "Acer Chromebook R11",
@@ -127,7 +127,7 @@ export const projects = [
   "img": "/images/projects/acer-r11-kiosk.png",
   "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation",
   "liveUrl": "https://kawingph.com",
-  "category": "hardware"
+  "category": "Circuitry Project"
   },
   {
     "title": "Smart Home Automation – Rain-Sensing Clothesline and Automatic Door",
