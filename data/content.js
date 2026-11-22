@@ -124,8 +124,8 @@ export const projects = [
     "Touchscreen Kiosk"
   ],
   "img": "/images/projects/r11.png",
-  "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation",
-  "liveUrl": "https://kawingph.com",
+  "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation/Kiosk-Configuration",
+  "liveUrl": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation/Kiosk-Configuration",
   "category": "kicad"
   },
   {
