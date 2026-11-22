@@ -336,7 +336,7 @@ export const projects = [
     "slug": "acer-r11-kiosk-transformation",
     "name": "Second Life for an Old Laptop",
     "subtitle": "Acer Chromebook R11 Touchscreen Kiosk",
-    "summary": "Repurposing an Acer Chromebook R11 into a touchscreen kiosk for a thesis project, avoiding the cost of buying a new device.",
+    "summary": "This laptop was turned into a kiosk due to limited financial resources, as a kiosk is needed for my thesis. Instead of buying a new one, I reused an Acer Chromebook R11 and modified it into a functional touchscreen kiosk to save money.",
     "kind": "AutoCAD Project",
     "desc": "Acer Chromebook R11 components modeled and documented in AutoCAD as part of its transformation into a functional touchscreen kiosk. The laptop was reused for a thesis project because of limited financial resources, rather than purchasing a new kiosk device.",
     "stack": [
