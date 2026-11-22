@@ -123,7 +123,7 @@ export const projects = [
     "Shell Scripting",
     "Touchscreen Kiosk"
   ],
-  "img": "/images/projects/acer-r11-kiosk.png",
+  "img": "/images/projects/r11.png",
   "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation",
   "liveUrl": "https://kawingph.com",
   "category": "kicad"
