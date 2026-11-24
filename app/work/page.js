@@ -4,7 +4,7 @@ import ProjectGallery from "@/components/ProjectGallery"
 import { projects } from "@/data/content"
 export const metadata = { title:"Projects | Orland Louise Catala" }
 export default function WorkPage() {
-  const circuitProjects = projects.filter(project => project.category === "kicad")
+  const circuitProjects = projects.filter(project => project.category === "circuits-hardware")
   const sineWaveIndex = circuitProjects.findIndex(project => project.slug === "sine-wave")
   const fastestFingerIndex = circuitProjects.findIndex(project => project.slug === "fastest-finger-game")
   const twoToOneMultiplexerIndex = circuitProjects.findIndex(project => project.slug === "2-to-1-multiplexer")
@@ -18,7 +18,7 @@ export default function WorkPage() {
 
   return (
     <>
-    <Nav items={[["WEB", "#web-developments"], ["CAD", "#cads"], ["Circuitry", "#circuitry"]]} brandHref="/" contactHref="/contact" />
+    <Nav items={[["WEB", "#web-developments"], ["CAD", "#cads"], ["Circuits & Hardware", "#circuits-hardware"]]} brandHref="/" contactHref="/contact" />
     <main className="section work-page">
       <Link href="/" className="eyebrow stack-view-all">← Back to Portfolio</Link>
       <section className="project-section" aria-labelledby="web-developments">
@@ -31,8 +31,8 @@ export default function WorkPage() {
         <p className="muted">Explore my AutoCAD projects, technical drawings, and design layouts.</p>
         <ProjectGallery items={projects.filter(project => project.category === "autocad")} />
       </section>
-      <section className="project-section" aria-labelledby="circuitry">
-        <h2 id="circuitry" className="h2">Circuitry</h2>
+      <section className="project-section" aria-labelledby="circuits-hardware">
+        <h2 id="circuits-hardware" className="h2">Circuits &amp; Hardware</h2>
         <p className="muted">Explore my circuit designs, KiCad schematics, and PCB layouts.</p>
         <ProjectGallery items={circuitProjects} />
       </section>

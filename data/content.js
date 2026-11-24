@@ -9,14 +9,15 @@ export const projectCategories = [
     "label": "AutoCAD"
   },
   {
-    "id": "kicad",
-    "label": "KiCad"
+    "id": "circuits-hardware",
+    "label": "Circuits & Hardware"
   }
 ]
 export const projects = [
   {
     "title": "KAWING – IoT-Integrated Post-Harvest Coordination Platform",
     "slug": "kawing",
+    "role": "I designed and built the platform, including the farmer and service workflows, buyer bidding, loan requests, grain-moisture integration, and community kiosk experience.",
     "name": "KAWING",
     "subtitle": "Post-Harvest Coordination",
     "summary": "Connecting rice farmers with post-harvest services and real-time grain moisture readings.",
@@ -43,6 +44,7 @@ export const projects = [
   {
     "title": "HealthTrack – Health and Calorie Monitoring System",
     "slug": "healthtrack",
+    "role": "I designed and built the health-tracking experience, including guided user intake, calorie monitoring, touch-friendly screens, and Filipino-language support.",
     "name": "HealthTrack",
     "subtitle": "Health & Calorie Monitoring",
     "summary": "A touch-friendly health tracker designed for rural communities in Pampanga.",
@@ -64,6 +66,7 @@ export const projects = [
   {
     "title": "Ratheuse – Real-Time PC Hardware Utilization Monitor",
     "slug": "ratheuse",
+    "role": "I designed and built the hardware-monitoring app and its download website, bringing CPU, GPU, and RAM readings together in one interface.",
     "name": "Ratheuse",
     "subtitle": "PC Hardware Monitoring App",
     "summary": "A download website for a desktop app that monitors CPU, GPU, and RAM activity in real time.",
@@ -85,6 +88,7 @@ export const projects = [
   {
     "title": "e-LINGAP – Citizen Intake and Welfare Registry",
     "slug": "e-lingap",
+    "role": "I designed and built the touchscreen welfare kiosk, including ID transactions, application and document workflows, and Firebase-backed records.",
     "name": "e-LINGAP",
     "subtitle": "Citizen Intake & Welfare Registry",
     "summary": "A self-service touchscreen kiosk that simplifies welfare applications and ID transactions.",
@@ -110,10 +114,11 @@ export const projects = [
   {
     "title": "From Laptop to Kiosk – Acer R11 Touchscreen Transformation",
     "slug": "from-laptop-to-kiosk",
+    "role": "I repurposed the Acer Chromebook R11 into a touchscreen kiosk, including the hardware transformation, Debian setup, and kiosk configuration for the KAWING thesis project.",
     "name": "From Laptop to Kiosk",
     "subtitle": "Acer R11 Touchscreen Transformation",
-    "summary": "A project transforming a standard laptop into a touchscreen kiosk for public use.",
-    "kind": "Circuitry Project",
+    "summary": "This laptop was turned into a kiosk due to limited financial resources, as a kiosk is needed for my thesis. Instead of buying a new one, I reused an Acer Chromebook R11 and modified it into a functional touchscreen kiosk to save money.",
+    "kind": "Circuits & Hardware Project",
    "desc": "A cost-effective touchscreen kiosk developed for the KAWING thesis project by repurposing an Acer Chromebook R11. The laptop was dismantled, redesigned in AutoCAD, and converted from ChromeOS to Debian 13 using custom UEFI firmware. The kiosk features a customized touchscreen keyboard, secure login and shutdown authentication, and dedicated access to the KAWING platform for Filipino farmers.",
   "stack": [
     "Acer Chromebook R11",
@@ -126,15 +131,16 @@ export const projects = [
   "img": "/images/projects/r11.png",
   "href": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation/Kiosk-Configuration",
   "liveUrl": "https://github.com/LouiseCatala/From-Laptop-to-Kiosk-The-Acer-R11-Transformation/Kiosk-Configuration",
-  "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "Smart Home Automation – Rain-Sensing Clothesline and Automatic Door",
     "slug": "smart-home-automation",
+    "role": "I designed and built the Arduino automation circuit, connecting the moisture and distance sensors to the clothesline and door servo controls.",
     "name": "Smart Home Automation",
     "subtitle": "Rain-Sensing Clothesline & Automatic Door",
     "summary": "An Arduino-based automation circuit using moisture and distance sensing to control two servo mechanisms.",
-    "kind": "Circuitry Project",
+    "kind": "Circuits & Hardware Project",
     "desc": "A smart-home automation circuit for a rain-sensing retractable clothesline and an automatic door system. An Arduino Uno processes readings from a soil-moisture sensor and an ultrasonic distance sensor, then controls two servo motors and an audible indicator.",
     "stack": [
       "Arduino Uno",
@@ -146,15 +152,16 @@ export const projects = [
     "img": "/images/projects/matic.png",
     "href": "https://github.com/louisecatala24-hash/Smart-Home-Automation-Rain-Sensing-Retractable-Clothesline-and-Automatic-Door-System",
     "liveUrl": "https://github.com/louisecatala24-hash/Smart-Home-Automation-Rain-Sensing-Retractable-Clothesline-and-Automatic-Door-System",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "Automatic Parking System – Arduino Parking Control",
     "slug": "automatic-parking-system",
+    "role": "I designed and built the Arduino parking-control circuit, connecting sensor inputs to the barrier servo, LED indicators, and LCD status display.",
     "name": "Automatic Parking System",
     "subtitle": "Arduino Parking Control",
     "summary": "An Arduino-based parking circuit with barrier control, status indicators, and an LCD display.",
-    "kind": "Circuitry Project",
+    "kind": "Circuits & Hardware Project",
     "desc": "An automatic parking system built around an Arduino Uno. The circuit coordinates input sensors, a servo-controlled parking barrier, LED status indicators, and an LCD display to support automated vehicle entry and parking-space monitoring.",
     "stack": [
       "Arduino Uno",
@@ -166,15 +173,16 @@ export const projects = [
     "img": "/images/projects/matic_parking.png",
     "href": "https://github.com/louisecatala24-hash/Automatic-Parking-System",
     "liveUrl": "https://github.com/louisecatala24-hash/Automatic-Parking-System",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "Sine Wave – Signal Visualization and Manual Point Analysis",
     "slug": "sine-wave",
+    "role": "I created the waveform visualization and manually calculated sample points to show how the equation maps to the plotted signal.",
     "name": "Sine Wave",
     "subtitle": "Signal Visualization & Analysis",
     "summary": "A plotted sine-wave signal with manually calculated points for amplitude and time analysis.",
-    "kind": "Circuitry Project",
+    "kind": "Circuits & Hardware Project",
     "desc": "A sine-wave visualization based on y(t) = 12 sin(2π·7t), showing the continuous waveform alongside manually computed sample points. The project demonstrates waveform plotting, signal parameters, and verification of calculated amplitude values over time.",
     "stack": [
       "Python",
@@ -185,11 +193,12 @@ export const projects = [
     "img": "/images/projects/SineWave.png",
     "href": "https://github.com/louisecatala24-hash/Sine-Wave",
     "liveUrl": "https://github.com/louisecatala24-hash/Sine-Wave",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "2-to-1 Multiplexer – Digital Logic Circuit",
     "slug": "2-to-1-multiplexer",
+    "role": "I designed and built the logic-gate circuit that uses the select input to route either data input to the output.",
     "name": "2-to-1 Multiplexer",
     "subtitle": "Digital Logic Circuit",
     "summary": "A gate-level multiplexer that selects one of two inputs using a single control signal.",
@@ -204,11 +213,12 @@ export const projects = [
     "img": "/images/projects/2to1mux.png",
     "href": "https://github.com/louisecatala24-hash/2to1mux",
     "liveUrl": "https://github.com/louisecatala24-hash/2to1mux",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "4-to-1 Multiplexer – Digital Logic Circuit",
     "slug": "4-to-1-multiplexer",
+    "role": "I designed and built the logic-gate circuit that uses two select inputs to route one of four data inputs to the output.",
     "name": "4-to-1 Multiplexer",
     "subtitle": "Digital Logic Circuit",
     "summary": "A gate-level multiplexer that selects one of four inputs using two control signals.",
@@ -223,11 +233,12 @@ export const projects = [
     "img": "/images/projects/4to1mux.png",
     "href": "https://github.com/louisecatala24-hash/4to1mux",
     "liveUrl": "https://github.com/louisecatala24-hash/4to1mux",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "Fastest Finger Game – KiCad PCB",
     "slug": "fastest-finger-game",
+    "role": "I created the editable KiCad board layout, arranging the player controls, display, indicators, buzzer, and FPGA footprint.",
     "name": "Fastest Finger Game",
     "subtitle": "Three-Player Reaction-Time PCB",
     "summary": "A three-player reaction-time game board designed in KiCad.",
@@ -243,11 +254,12 @@ export const projects = [
     "img": "/images/projects/fastest-finger-game.jpg",
     "href": "https://github.com/LouiseCatala/Fastest-Finger-Game/tree/main",
     "liveUrl": "https://github.com/LouiseCatala/Fastest-Finger-Game/tree/main",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "KAWING PalaySense - IoT Grain Moisture Device",
     "slug": "kawing-palaysense",
+    "role": "I designed and built the ESP32 moisture-sensing device, including sensor reading, moisture classification, and Wi-Fi reporting to KAWING.",
     "name": "KAWING PalaySense",
     "subtitle": "IoT Grain Moisture Assessment",
     "summary": "An ESP32-based device that assesses rice grain moisture and sends readings to the KAWING platform.",
@@ -267,11 +279,12 @@ export const projects = [
     "img": "/images/projects/palaysense.jpg",
     "href": "https://github.com/LouiseCatala/Kawing-PalaySense/tree/main",
     "liveUrl": "https://github.com/LouiseCatala/Kawing-PalaySense/tree/main",
-    "category": "kicad"
+  "category": "circuits-hardware"
   },
   {
     "title": "Floor Plan 2D – AutoCAD Design",
     "slug": "floor-plan-2d",
+    "role": "I drafted the 2D floor plan in AutoCAD, laying out the spaces and technical drawing details.",
     "name": "Floor Plan 2D",
     "subtitle": "2D Architectural Floor Plan",
     "summary": "A 2D floor plan created in AutoCAD.",
@@ -295,6 +308,7 @@ export const projects = [
   {
     "title": "3D Floor Plan - AutoCAD House Models",
     "slug": "3d-floor-plan",
+    "role": "I modeled the two house concepts in AutoCAD, including the two-story exterior and the shaded floor-plan presentation.",
     "name": "3D Floor Plan",
     "subtitle": "Two-Story House Models",
     "summary": "A pair of detailed two-story house models and floor plans drafted in AutoCAD.",
@@ -315,6 +329,7 @@ export const projects = [
   {
     "title": "Appliances - 3D AutoCAD Models",
     "slug": "appliances-3d-dwg",
+    "role": "I modeled the bed, desk, lamp, storage desk, and table collection in AutoCAD.",
     "name": "Appliances",
     "subtitle": "Multiple 3D AutoCAD Projects",
     "summary": "A collection of 3D AutoCAD appliance and furniture projects.",
@@ -334,6 +349,7 @@ export const projects = [
   {
     "title": "SECOND LIFE FOR AN OLD LAPTOP",
     "slug": "acer-r11-kiosk-transformation",
+    "role": "I modeled the dismantled Acer Chromebook R11 components in AutoCAD as part of transforming the laptop into a touchscreen kiosk for the KAWING thesis project.",
     "name": "Second Life for an Old Laptop",
     "subtitle": "Acer Chromebook R11 Touchscreen Kiosk",
     "summary": "This laptop was turned into a kiosk due to limited financial resources, as a kiosk is needed for my thesis. Instead of buying a new one, I reused an Acer Chromebook R11 and modified it into a functional touchscreen kiosk to save money.",
@@ -354,6 +370,7 @@ export const projects = [
   {
     "title": "CareWare – PC Cleanup and Health Checker",
     "slug": "careware",
+    "role": "I designed and built the Windows PC-care app, including diagnostics, reviewed cleanup, inspection notes, local history, and customer reports.",
     "name": "CareWare",
     "subtitle": "Windows PC Health and Cleanup App",
     "summary": "Built for non-techy users, CareWare checks your PC and explains the results in simple words.",
@@ -368,6 +385,7 @@ export const projects = [
   {
     "title": "The SIS – Proxmox Resource Monitoring Console",
     "slug": "the-sis-proxmox-monitoring",
+    "role": "I designed and built the Proxmox monitoring console, including resource collection, history, alerts, trends, notifications, and reports.",
     "name": "The SIS",
     "subtitle": "Proxmox Resource Monitoring Console",
     "summary": "A local dashboard for monitoring Proxmox resources, system health, alerts, and activity history.",

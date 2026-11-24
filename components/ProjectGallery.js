@@ -22,24 +22,7 @@ const projectOutcomes = {
   "the-sis-proxmox-monitoring": ["A Proxmox lab needs a local view of node resources, system health, alerts, and activity history.", "A monitoring console that records CPU, RAM, disk, and availability data and presents trends, alerts, notifications, and downloadable reports."],
 }
 
-const projectRoles = {
-  kawing: "I designed and built the platform, including the farmer and service workflows, buyer bidding, loan requests, grain-moisture integration, and community kiosk experience.",
-  healthtrack: "I designed and built the health-tracking experience, including guided user intake, calorie monitoring, touch-friendly screens, and Filipino-language support.",
-  ratheuse: "I designed and built the hardware-monitoring app and its download website, bringing CPU, GPU, and RAM readings together in one interface.",
-  "e-lingap": "I designed and built the touchscreen welfare kiosk, including ID transactions, application and document workflows, and Firebase-backed records.",
-  "smart-home-automation": "I designed and built the Arduino automation circuit, connecting the moisture and distance sensors to the clothesline and door servo controls.",
-  "automatic-parking-system": "I designed and built the Arduino parking-control circuit, connecting sensor inputs to the barrier servo, LED indicators, and LCD status display.",
-  "sine-wave": "I created the waveform visualization and manually calculated sample points to show how the equation maps to the plotted signal.",
-  "2-to-1-multiplexer": "I designed and built the logic-gate circuit that uses the select input to route either data input to the output.",
-  "4-to-1-multiplexer": "I designed and built the logic-gate circuit that uses two select inputs to route one of four data inputs to the output.",
-  "fastest-finger-game": "I created the editable KiCad board layout, arranging the player controls, display, indicators, buzzer, and FPGA footprint.",
-  "kawing-palaysense": "I designed and built the ESP32 moisture-sensing device, including sensor reading, moisture classification, and Wi-Fi reporting to KAWING.",
-  "floor-plan-2d": "I drafted the 2D floor plan in AutoCAD, laying out the spaces and technical drawing details.",
-  "3d-floor-plan": "I modeled the two house concepts in AutoCAD, including the two-story exterior and the shaded floor-plan presentation.",
-  "appliances-3d-dwg": "I modeled the bed, desk, lamp, storage desk, and table collection in AutoCAD.",
-  careware: "I designed and built the Windows PC-care app, including diagnostics, reviewed cleanup, inspection notes, local history, and customer reports.",
-  "the-sis-proxmox-monitoring": "I designed and built the Proxmox monitoring console, including resource collection, history, alerts, trends, notifications, and reports.",
-}
+
 
 export default function ProjectGallery({ items }) {
   const [selected, setSelected] = useState(null)
@@ -89,7 +72,7 @@ export default function ProjectGallery({ items }) {
         <h3 className="eyebrow">Problem</h3>
         <p className="muted">{projectOutcomes[selected.slug]?.[0] || selected.summary}</p>
         <h3 className="eyebrow">My role</h3>
-        <p className="muted">{projectRoles[selected.slug] || "I designed and built this project."}</p>
+        <p className="muted">{selected.role || "I designed and built this project."}</p>
         <h3 className="eyebrow">Tools</h3>
         <div className="tags">{selected.stack.map(item => <span key={item}>{item}</span>)}</div>
         <h3 className="eyebrow">Result</h3>
