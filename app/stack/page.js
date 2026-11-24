@@ -2,7 +2,8 @@
 import Nav from "@/components/Nav"
 import SkillsBento from "@/components/SkillsBento"
 import { Curves } from "@/components/Extras"
-export const metadata={title:"Tech Stack | Orland Louise Catala",description:"The languages, frameworks, databases, electronics, and tools behind my projects."}
+import { pageMetadata } from "@/data/seo"
+export const metadata=pageMetadata({path:"/stack",title:"Tech Stack | Orland Louise Catala",description:"The languages, frameworks, databases, electronics, and tools behind Orland Louise Catala’s web development, embedded devices, IoT, automation, CAD, circuits, and hardware projects."})
 const portfolioLinks=[["Web & Data","#web"],["Embedded","#embedded"],["Engineering","#design"],["Systems","#systems"],["Toolkit","#engineering-toolkit"]]
 export default function StackPage(){return <><Curves/><Nav items={portfolioLinks} brandHref="/" contactHref="/contact" compact/><main className="section stack-page skills-stack-page">
 <Link href="/#what-i-can-do" className="eyebrow ulink">← Back to capabilities</Link>

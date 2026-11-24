@@ -2,11 +2,9 @@ import Link from "next/link"
 import SkillIcon from "@/components/SkillIcon"
 import { Curves } from "@/components/Extras"
 import { certifications } from "@/data/content"
+import { pageMetadata } from "@/data/seo"
 
-export const metadata = {
-  title: "Certifications | Orland Louise Catala",
-  description: "Professional certifications and completed training by Orland Louise Catala."
-}
+export const metadata = pageMetadata({ path: "/certifications", title: "Certifications | Orland Louise Catala", description: "Professional certifications and completed training by Orland Louise Catala." })
 
 const certificateGroups = [
   { label: "Professional development", certificates: certifications.filter(certificate => ["Anthropic", "Google"].includes(certificate.issuer)) },

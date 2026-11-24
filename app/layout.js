@@ -8,8 +8,27 @@ const inter = Inter({ subsets:["latin"], variable:"--inter" })
 const mono = JetBrains_Mono({ subsets:["latin"], variable:"--mono" })
 const vibes = Great_Vibes({ subsets:["latin"], weight:"400", variable:"--vibes" })
 export const metadata = {
-  title: "Orland Louise Catala | Portfolio",
-  description: "Computer Engineering student building web applications, embedded systems, and practical community solutions.",
+  metadataBase: new URL("https://catala-portfolio.vercel.app"),
+  title: "Orland Louise Catala – Computer Engineer",
+  description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+  verification: { google: "mz2cLT416HXSFDA4EB3qMNaqKzSpktFJgD59e9YW2Ys" },
+  alternates: { canonical: "/" },
+  keywords: ["Orland Louise Catala", "Louise Catala", "Computer Engineer", "Computer Engineering", "Web Development", "Embedded Devices", "IoT", "Automation", "CAD", "Circuits and Hardware", "KAWING PH"],
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Orland Louise Catala",
+    title: "Orland Louise Catala – Computer Engineer",
+    description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+    images: [{ url: "/images/2x2.jpg", width: 160, height: 160, alt: "Orland Louise Catala" }]
+  },
+  twitter: {
+    card: "summary",
+    title: "Orland Louise Catala – Computer Engineer",
+    description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+    images: ["/images/2x2.jpg"]
+  },
   icons: {
     icon: [{ url: "/images/2x2.jpg", type: "image/jpeg" }],
     shortcut: "/images/2x2.jpg",

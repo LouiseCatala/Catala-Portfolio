@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import Nav from "@/components/Nav"
 import { projects } from "@/data/content"
+import { pageMetadata } from "@/data/seo"
 
 export function generateStaticParams() {
   return projects.map(project => ({ slug: project.slug }))
@@ -10,7 +11,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const project = projects.find(item => item.slug === slug)
-  return { title: `${project?.name || project?.title || "Project"} | Orland Louise Catala`, description: project?.summary || project?.desc }
+  if (!project) return pageMetadata({ path: `/work/${slug}`, title: "Project | Orland Louise Catala", description: "Project by Orland Louise Catala." })
+  return pageMetadata({
+    path: `/work/${slug}`,
+    title: `${project.name || project.title} | Orland Louise Catala`,
+    description: project.summary || project.desc,
+    image: project.img,
+    imageAlt: `${project.name || project.title} project preview`
+  })
 }
 
 export default async function ProjectPage({ params }) {

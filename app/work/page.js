@@ -2,7 +2,8 @@ import Link from "next/link"
 import Nav from "@/components/Nav"
 import ProjectGallery from "@/components/ProjectGallery"
 import { projects } from "@/data/content"
-export const metadata = { title:"Projects | Orland Louise Catala" }
+import { pageMetadata } from "@/data/seo"
+export const metadata = pageMetadata({ path: "/work", title: "Projects | Orland Louise Catala", description: "Explore Orland Louise Catala’s web development, KAWING PH, kiosk, automation, CAD, circuits, hardware, and engineering projects." })
 export default function WorkPage() {
   const circuitProjects = projects.filter(project => project.category === "circuits-hardware")
   const sineWaveIndex = circuitProjects.findIndex(project => project.slug === "sine-wave")
