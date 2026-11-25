@@ -8,7 +8,7 @@ export function pageMetadata({ path, title, description, image = "/images/2x2.jp
     openGraph: {
       type: "website",
       url: path,
-      siteName: "Orland Louise Catala",
+      siteName: "Louise Catala",
       title,
       description,
       images: [{ url: image, alt: imageAlt }]

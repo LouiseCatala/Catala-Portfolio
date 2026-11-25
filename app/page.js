@@ -9,6 +9,13 @@ export default function Home() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://catala-portfolio.vercel.app/#website",
+        url: "https://catala-portfolio.vercel.app/",
+        name: "Louise Catala",
+        alternateName: "Orland Louise Catala"
+      },
+      {
         "@type": "ProfilePage",
         "@id": "https://catala-portfolio.vercel.app/#profile",
         url: "https://catala-portfolio.vercel.app/",

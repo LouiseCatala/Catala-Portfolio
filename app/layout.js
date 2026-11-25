@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Orland Louise Catala",
+    siteName: "Louise Catala",
     title: "Orland Louise Catala – Computer Engineer",
     description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
     images: [{ url: "/images/2x2.jpg", width: 160, height: 160, alt: "Orland Louise Catala" }]
@@ -30,9 +30,8 @@ export const metadata = {
     images: ["/images/2x2.jpg"]
   },
   icons: {
-    icon: [{ url: "/images/2x2.jpg", type: "image/jpeg" }],
-    shortcut: "/images/2x2.jpg",
-    apple: "/images/2x2.jpg"
+    icon: [{ url: "/favicon.png", sizes: "192x192", type: "image/png" }],
+    apple: "/favicon.png"
   }
 }
 const init = `try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}`
