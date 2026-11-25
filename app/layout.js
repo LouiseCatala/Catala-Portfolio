@@ -21,13 +21,13 @@ export const metadata = {
     siteName: "Louise Catala",
     title: "Orland Louise Catala – Computer Engineer",
     description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
-    images: [{ url: "/images/2x2.jpg", width: 160, height: 160, alt: "Orland Louise Catala" }]
+    images: [{ url: "/images/2x2.png", width: 666, height: 692, alt: "Orland Louise Catala" }]
   },
   twitter: {
     card: "summary",
     title: "Orland Louise Catala – Computer Engineer",
     description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
-    images: ["/images/2x2.jpg"]
+    images: ["/images/2x2.png"]
   },
   icons: {
     icon: [{ url: "/favicon.png", sizes: "192x192", type: "image/png" }],

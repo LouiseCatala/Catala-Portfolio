@@ -30,7 +30,7 @@ export default function Home() {
         jobTitle: "Computer Engineer",
         description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
         url: "https://catala-portfolio.vercel.app/",
-        image: "https://catala-portfolio.vercel.app/images/2x2.jpg",
+        image: "https://catala-portfolio.vercel.app/images/2x2.png",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Angeles City",

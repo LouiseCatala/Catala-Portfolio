@@ -1,6 +1,6 @@
 const origin = "https://catala-portfolio.vercel.app"
 
-export function pageMetadata({ path, title, description, image = "/images/2x2.jpg", imageAlt = "Orland Louise Catala" }) {
+export function pageMetadata({ path, title, description, image = "/images/2x2.png", imageAlt = "Orland Louise Catala" }) {
   return {
     title,
     description,
