@@ -51,7 +51,7 @@ export default function ProjectGallery({ items }) {
     <div className="grid3 project-grid">
       {items.map(project => (
         <article id={project.slug} key={project.slug} className="card project-preview">
-          <img src={project.img} alt={`${project.title} preview`} loading="lazy" />
+          <img src={project.img} alt={`${project.name || project.title}: ${project.summary || project.desc}`} loading="lazy" />
           <div><h3>{project.name || project.title.split(" – ")[0]}</h3><p className="project-subtitle muted">{project.subtitle || project.kind}</p></div>
           <p className="project-summary muted">{project.summary || project.desc}</p>
           <div className="tags project-preview-tags">{project.stack.slice(0, 3).map(item => <span key={item}>{item}</span>)}{project.stack.length > 3 && <span>+{project.stack.length - 3} more</span>}</div>
@@ -65,7 +65,7 @@ export default function ProjectGallery({ items }) {
     {selected && <dialog className="project-dialog" ref={dialog} aria-labelledby={`details-${selected.slug}`} onCancel={() => setSelected(null)} onClose={() => setSelected(null)} onClick={event => { if (event.target === event.currentTarget) setSelected(null) }}>
       <div className="project-dialog-content">
         <div className="project-dialog-top"><p className="eyebrow muted">{selected.kind}</p><button type="button" className="project-dialog-close" aria-label="Close project details" onClick={() => setSelected(null)}>✕</button></div>
-        <img className="project-dialog-image" src={selected.img} alt={`${selected.title} preview`} />
+        <img className="project-dialog-image" src={selected.img} alt={`${selected.name || selected.title}: ${selected.summary || selected.desc}`} />
         <Link href={selected.liveUrl || `/work/${selected.slug}`} className="ulink project-dialog-project-link">View project</Link>
         <div className="project-dialog-details">
         <h2 id={`details-${selected.slug}`}>{selected.title}</h2>

@@ -13,7 +13,7 @@ export function pageMetadata({ path, title, description, image = "/images/2x2.pn
       description,
       images: [{ url: image, alt: imageAlt }]
     },
-    twitter: { card: "summary", title, description, images: [image] }
+    twitter: { card: "summary_large_image", title, description, images: [image] }
   }
 }
 

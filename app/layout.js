@@ -9,24 +9,23 @@ const mono = JetBrains_Mono({ subsets:["latin"], variable:"--mono" })
 const vibes = Great_Vibes({ subsets:["latin"], weight:"400", variable:"--vibes" })
 export const metadata = {
   metadataBase: new URL("https://catala-portfolio.vercel.app"),
-  title: "Orland Louise Catala – Computer Engineer",
-  description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+  title: "Orland Louise Catala | Computer Engineer",
+  description: "Louise Catala (Orland Louise Catala) — Computer Engineer in the Philippines. Explore projects in web development, embedded systems, IoT, networking, automation, CAD, and hardware engineering.",
   verification: { google: "mz2cLT416HXSFDA4EB3qMNaqKzSpktFJgD59e9YW2Ys" },
   alternates: { canonical: "/" },
-  keywords: ["Orland Louise Catala", "Louise Catala", "Computer Engineer", "Computer Engineering", "Web Development", "Embedded Devices", "IoT", "Automation", "CAD", "Circuits and Hardware", "KAWING PH"],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   openGraph: {
     type: "website",
     url: "/",
     siteName: "Louise Catala",
-    title: "Orland Louise Catala – Computer Engineer",
-    description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+    title: "Orland Louise Catala | Computer Engineer",
+    description: "Louise Catala (Orland Louise Catala) — Computer Engineer in the Philippines. Explore projects in web development, embedded systems, IoT, networking, automation, CAD, and hardware engineering.",
     images: [{ url: "/images/2x2.png", width: 666, height: 692, alt: "Orland Louise Catala" }]
   },
   twitter: {
-    card: "summary",
-    title: "Orland Louise Catala – Computer Engineer",
-    description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+    card: "summary_large_image",
+    title: "Orland Louise Catala | Computer Engineer",
+    description: "Louise Catala (Orland Louise Catala) — Computer Engineer in the Philippines. Explore projects in web development, embedded systems, IoT, networking, automation, CAD, and hardware engineering.",
     images: ["/images/2x2.png"]
   },
   icons: {

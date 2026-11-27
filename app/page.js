@@ -19,16 +19,18 @@ export default function Home() {
         "@type": "ProfilePage",
         "@id": "https://catala-portfolio.vercel.app/#profile",
         url: "https://catala-portfolio.vercel.app/",
-        name: "Orland Louise Catala – Computer Engineer",
+        name: "Orland Louise Catala | Computer Engineer",
         mainEntity: { "@id": "https://catala-portfolio.vercel.app/#person" }
       },
       {
         "@type": "Person",
         "@id": "https://catala-portfolio.vercel.app/#person",
         name: "Orland Louise Catala",
+        givenName: "Orland Louise",
+        familyName: "Catala",
         alternateName: "Louise Catala",
         jobTitle: "Computer Engineer",
-        description: "I’m Louise Catala - a Computer Engineer in the Philippines. I build practical systems through web development, embedded devices, IoT, automation, CAD, and hardware projects.",
+        description: "Graduating Computer Engineering student and Computer Engineer in the Philippines. Louise Catala (Orland Louise Catala) works on practical projects in web development, embedded systems, IoT, networking, automation, CAD, and hardware engineering.",
         url: "https://catala-portfolio.vercel.app/",
         image: "https://catala-portfolio.vercel.app/images/2x2.png",
         address: {
